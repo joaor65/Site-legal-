@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Vídeos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Vídeos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Site de Vídeos</h1>
-    </header>
-    
-    <section class="upload">
-        <h2>Adicionar Vídeo</h2>
-        <form id="videoForm">
-            <label for="videoUrl">URL do Vídeo:</label>
-            <input type="url" id="videoUrl" name="videoUrl" required>
-            <button type="submit">Adicionar Vídeo</button>
-        </form>
-    </section>
-
-    <section class="videos">
-        <h2>Vídeos Recentes</h2>
-        <div id="videoList"></div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Site de Vídeos</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <header>
+    <h1>Minha Galeria de Vídeos</h1>
+  </header>
+  <main>
+    <div class="video-gallery">
+      <!-- Adicione vídeos aqui -->
+      <div class="video">
+        <video controls>
+          <source src="videos/video1.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p>Descrição do Vídeo 1</p>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p>Descrição do Vídeo 2</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Minha Galeria</p>
+  </footer>
 </body>
 </html>
