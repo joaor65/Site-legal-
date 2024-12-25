@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site de Vídeos</h1>
+    </header>
+    
+    <section class="upload">
+        <h2>Adicionar Vídeo</h2>
+        <form id="videoForm">
+            <label for="videoUrl">URL do Vídeo:</label>
+            <input type="url" id="videoUrl" name="videoUrl" required>
+            <button type="submit">Adicionar Vídeo</button>
+        </form>
+    </section>
+
+    <section class="videos">
+        <h2>Vídeos Recentes</h2>
+        <div id="videoList"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Site de Vídeos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
